@@ -1,0 +1,12 @@
+<form #formMarker="ngForm">
+    <mat-form-field>
+        <mat-label>Título</mat-label>
+        <input matInput [(ngModel)]="data.title" name="title">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <textarea rows="3" matInput [(ngModel)]="data.desc" name="desc"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="guardarCambios(formMarker)">Confirmar</button>
+    <button mat-raised-button color="warn" (click)="onNoClick()">Cancelar</button>
+</form>
