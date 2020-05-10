@@ -14,8 +14,8 @@
       <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
     </div>
 </div> -->
-<div class="main-container">
-  <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+<div class="main-container" *ngIf="loading">
+  <mat-progress-bar mode="determinate" mode="query"></mat-progress-bar>
 </div>
 
 <app-mapa></app-mapa>

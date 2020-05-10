@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mapas';
+  loading = true;
+
+  constructor() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 3500);
+  }
 }
